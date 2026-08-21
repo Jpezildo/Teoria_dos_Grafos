@@ -3,9 +3,10 @@
 
 #define LIMITE 10
 
-typedef struct {
-    int adjacencia [LIMITE][LIMITE];
-    int num_vertices;
+typedef struct 
+{
+  int adjacencia[LIMITE][LIMITE];
+  int num_vertices;
 } GrafoMatriz;
 
 void inicializar(GrafoMatriz *grafo, int numero);
