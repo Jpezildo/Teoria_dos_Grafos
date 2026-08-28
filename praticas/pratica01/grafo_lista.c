@@ -17,7 +17,6 @@ void inserir_aresta_lista(GrafoLista *g, int u, int v) {
     if (!g) return;
     if (u < 0 || u >= g->n || v < 0 || v >= g->n) return;
 
-    // adiciona v na lista de u se não existir
     No *p = g->adj[u];
     while (p) {
         if (p->destino == v) break;
@@ -31,7 +30,6 @@ void inserir_aresta_lista(GrafoLista *g, int u, int v) {
         g->adj[u] = no;
     }
 
-    // adiciona u na lista de v se não existir
     p = g->adj[v];
     while (p) {
         if (p->destino == u) break;
