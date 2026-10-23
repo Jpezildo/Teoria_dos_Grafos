@@ -29,7 +29,7 @@ int contar_componentes(GrafoLista *g) {
     return componentes;
 }
 
-// Função auxiliar para rastrear o pai e evitar falsos positivos em grafos não-direcionados
+
 int dfs_ciclo(GrafoLista *g, int u, int pai, int *visitado) {
     visitado[u] = 1;
     No *adj = g->adj[u];
@@ -39,7 +39,7 @@ int dfs_ciclo(GrafoLista *g, int u, int pai, int *visitado) {
         if (!visitado[v]) {
             if (dfs_ciclo(g, v, u, visitado)) return 1;
         } else if (v != pai) {
-            return 1; // Achou um vizinho já visitado que não é o pai
+            return 1; 
         }
         adj = adj->prox;
     }

@@ -12,7 +12,6 @@ GrafoLista* criar_grafo(int num_vertices) {
     return g;
 }
 
-// Considerando um grafo não-direcionado (vai e volta)
 void adicionar_aresta(GrafoLista *g, int u, int v) {
     No *novo = (No*)malloc(sizeof(No));
     novo->vertice = v;

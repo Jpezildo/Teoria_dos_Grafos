@@ -7,7 +7,6 @@ typedef struct {
     int topo, capacidade;
 } Pilha;
 
-// Funções da Pilha omitidas para brevidade (init, push, pop)
 
 void dfs_recursiva(GrafoLista *g, int u, int *visitado);
 int contar_componentes(GrafoLista *g);
