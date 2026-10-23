@@ -1,6 +1,6 @@
 #ifndef DIJKSTRA_H
 #define DIJKSTRA_H
-
+#include <limits.h>
 
 #define INF INT_MAX
 
